@@ -1,10 +1,3 @@
-/*
-
-Top Dinero Ganado
-1. Adri: 15300
-2. Andy: 12800
-
-*/
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
