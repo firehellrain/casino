@@ -3,7 +3,7 @@ using namespace std;
 void nuevaCarta(char& c, int& cont, int& cartasj, bool& terminal){
     
     cout<<"\nTu numero de cartas es: "<<cartasj<<endl;
-    cout<<"�Qu� deseas hacer?"<<endl;
+    cout<<"¿Qué deseas hacer?"<<endl;
 
     int car = 1+numeroAleatorio(13);
 
@@ -44,7 +44,7 @@ void cartasBot(int& cartasb){
         carta = 1+numeroAleatorio(13);
     }while(cartasb<17);
 
-    cout<<"Cartas de la M�quina: "<<cartasb<<endl;
+    cout<<"Cartas de la Máquina: "<<cartasb<<endl;
 
 }
 
@@ -52,20 +52,20 @@ void resultadosB(int& dinero, int a, int cartasj, int cartasb, int cont){
 
     if(cartasj > 21){
         dinero -= a;
-        cout<<"\n�Te has pasado de 21, "<<red<<"has perdido"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"\n¡Te has pasado de 21, "<<red<<"has perdido"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else if (cartasb > 21){
         dinero += a;
-        cout<<"\n�La m�quina se ha pasado de 21, "<<green<<"has ganado"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"\n¡La máquina se ha pasado de 21, "<<green<<"has ganado"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else if(cartasj > cartasb && cont==2){
         dinero += 2*a;
-        cout<<"\n�Has superado a la m�quina en la primera tirada, "<<green<<"has ganado el triple"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"\n¡Has superado a la máquina en la primera tirada, "<<green<<"has ganado el triple"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else if(cartasj > cartasb){
         dinero += a;
-        cout<<"\n�Has superado a la m�quina, "<<green<<"has ganado"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"\n¡Has superado a la máquina, "<<green<<"has ganado"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else if(cartasj < cartasb){
         dinero -= a;
-        cout<<"\n�La m�quina te ha superado, "<<red<<"has perdido"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
-    } else cout<<"\n�La m�quina te ha "<<yellow<<"empatado"<<white<<"!\nRecuperas el dinero apostado."<<endl;
+        cout<<"\n¡La máquina te ha superado, "<<red<<"has perdido"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+    } else cout<<"\n¡La máquina te ha "<<yellow<<"empatado"<<white<<"!\nRecuperas el dinero apostado."<<endl;
 
 }
 
@@ -81,7 +81,7 @@ void blackjack(int& d, int& a, char& c){
         resultadosB(d, a, cartasj, cartasb, cont);
 
         do{
-            cout<<"�Seguir jugando? (S/N): ";
+            cout<<"¿Seguir jugando? (S/N): ";
             cin>>c;
         }while(((c!='S' && c!='s')&&(c!='N' && c!='n')) && d>0);
         if((c=='S' || c=='s') && d>0) {

@@ -32,10 +32,10 @@ void giro(int& dinero, int apuesta, char& c){
 
     if (traducirMoneda(c)==giro){
         dinero += apuesta;
-        cout<<green<<"¡Has ganado!"<<white<<" Tu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<green<<"Â¡Has ganado!"<<white<<" Tu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else {
         dinero -= apuesta;
-        cout<<red<<"¡Has perdido!"<<white<<" Tu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<red<<"Â¡Has perdido!"<<white<<" Tu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     }
 }
 
@@ -46,7 +46,7 @@ void coinflip(int& dinero, int& apuesta, char& c){
         elegirMoneda(apuesta, c, dinero);
         giro(dinero, apuesta, c);
         do{
-            cout<<"¿Seguir jugando? (S/N): ";
+            cout<<"Â¿Seguir jugando? (S/N): ";
             cin>>c;
         }while(((c!='S' && c!='s')&&(c!='N' && c!='n')));
     }while(c!='N' && c!='n' && dinero>0);

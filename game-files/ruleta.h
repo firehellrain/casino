@@ -41,19 +41,19 @@ void resultadosR(int& dinero, int a, int n, char color, int num, char colorn){
 
     if(n==num && colorn=='V'){
         dinero += a*5;
-        cout<<"¡"<<green<<"Has acertado el 14, ganando cinco veces lo apostado"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"Â¡"<<green<<"Has acertado el 14, ganando cinco veces lo apostado"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else if (n==num && colorn==color){
         dinero += a*2;
-        cout<<"¡"<<green<<"Has acertado el numero y el color, ganando el doble de lo apostado"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"Â¡"<<green<<"Has acertado el numero y el color, ganando el doble de lo apostado"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else if (n==num){
         dinero += a;
-        cout<<"¡"<<green<<"Has acertado el numero"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"Â¡"<<green<<"Has acertado el numero"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else if (colorn==color){
         dinero += a;
-        cout<<"¡"<<green<<"Has acertado el color"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"Â¡"<<green<<"Has acertado el color"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     } else {
         dinero -= a;
-        cout<<"¡"<<red<<"Has perdido"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
+        cout<<"Â¡"<<red<<"Has perdido"<<white<<"!\nTu balance actual es de "<<green<<dinero<<"$"<<white<<endl;
     }
 
 }
@@ -70,7 +70,7 @@ void ruleta(int& d, int& a, char& c){
         escogerNumero(num, colorn);
         resultadosR(d, a, n, color, num, colorn);
         do{
-            cout<<"¿Seguir jugando? (S/N): ";
+            cout<<"Â¿Seguir jugando? (S/N): ";
             cin>>c;
         }while((c!='S' && c!='s')&&(c!='N' && c!='n'));
         if(c=='S' || c=='s') system("cls");

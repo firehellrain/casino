@@ -22,7 +22,7 @@ void iniciarJuego(char& c){
     cout<<"__|  |/|\\|__   ||l|/,-------"<<yellow<<"8                   8"<<white<<" -| |   "<<blue<<"Congrugencia Bank"<<white<<"  |"<<endl;
     cout<<"__|._|/|\\|||.l |[=|/,-------"<<yellow<<"8   "<<green<<"Bienvenidos al"<<yellow<<"  8"<<white<<" -|-|    "<<blue<<"Sus 1000 euros"<<white<<"    |"<<endl;
     cout<<"__|[+|-|-||||li|[=|---------"<<yellow<<"8  "<<green<<"Casino de Mariam"<<yellow<<" 8"<<white<<" -| |    "<<blue<<"a buen recaudo"<<white<<"    |"<<endl;
-    cout<<"_-----.|/| //:\\_[=|\\`-------"<<yellow<<"8                   8"<<white<<" -|-|  Préstamos  Seguros  |"<<endl;
+    cout<<"_-----.|/| //:\\_[=|\\`-------"<<yellow<<"8                   8"<<white<<" -|-|  Pr�stamos  Seguros  |"<<endl;
     cout<<" /|  /||//8/ :  8_|\\`------ "<<yellow<<"8ooooooooooooooooooo8"<<white<<" -| | Suspensos     Viajes |"<<endl;
     cout<<"/=| //||/ |  .  | |\\\\_____________  ____  _________|-|                      |"<<endl;
     cout<<"==|//||  /   .   \\ \\\\_____________ |X|  | _________| `---==------------==---'"<<endl;
@@ -32,7 +32,7 @@ void iniciarJuego(char& c){
     cout<<endl;
 
     do{
-        cout<<"¿Deseas entrar? (S/N): ";
+        cout<<"�Deseas entrar? (S/N): ";
         cin>>c;
     }while((c!='S' && c!='s')&&(c!='N' && c!='n'));
 
@@ -86,7 +86,7 @@ int main(){
         if(dinero < 1 || (c=='N' || c=='n')) terminal = false;
     }
 
-    cout<<green<<"\n๏ฟฝGracias por jugar!";
+    cout<<green<<"\n¡Gracias por jugar!";
 
     return 0;
 }
