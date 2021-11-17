@@ -1,14 +1,18 @@
+// Librerías auxiliares
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
 #include <locale.h>
-#include "ConsoleColor.h"
 
-#include "auxfunc.h"
-#include "blackjack.h"
-#include "mayorMenor.h"
-#include "coinflip.h"
-#include "ruleta.h"
+// Interfaces auxiliares 
+#include "auxfiles\ConsoleColor.h"
+#include "auxfiles\auxfunc.h"
+
+// Interfaces de juegos del casino
+#include "gamemodes\blackjack.h"
+#include "gamemodes\mayorMenor.h"
+#include "gamemodes\coinflip.h"
+#include "gamemodes\ruleta.h"
 
 using namespace std;
 
