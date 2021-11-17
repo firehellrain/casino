@@ -36,7 +36,7 @@ void iniciarJuego(char& c){
     cout<<endl;
 
     do{
-        cout<<"�Deseas entrar? (S/N): ";
+        cout<<"¿Deseas entrar? (S/N): ";
         cin>>c;
     }while((c!='S' && c!='s')&&(c!='N' && c!='n'));
 
