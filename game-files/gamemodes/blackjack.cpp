@@ -1,3 +1,7 @@
+#include <iostream>
+#include "../auxfiles/ConsoleColor.h"
+#include "../auxfiles/auxfunc.h"
+
 using namespace std;
 
 void nuevaCarta(char& c, int& cont, int& cartasj, bool& terminal){

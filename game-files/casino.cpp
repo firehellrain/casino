@@ -3,16 +3,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <locale.h>
-
-// Interfaces auxiliares 
-#include "auxfiles\ConsoleColor.h"
-#include "auxfiles\auxfunc.h"
-
-// Interfaces de juegos del casino
-#include "gamemodes\blackjack.h"
-#include "gamemodes\mayorMenor.h"
-#include "gamemodes\coinflip.h"
-#include "gamemodes\ruleta.h"
+#include "auxfiles/ConsoleColor.h"
+#include "auxfiles/auxfunc.h"
+#include "gamemodes/headers/blackjack.h"
+#include "gamemodes/headers/coinflip.h"
+#include "gamemodes/headers/mayorMenor.h"
+#include "gamemodes/headers/ruleta.h"
 
 using namespace std;
 

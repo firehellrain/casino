@@ -1,3 +1,7 @@
+#include <iostream>
+#include "../auxfiles/ConsoleColor.h"
+#include "../auxfiles/auxfunc.h"
+
 using namespace std;
 
 void elegirNumero(int& n, char& c){

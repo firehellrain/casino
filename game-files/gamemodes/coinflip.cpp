@@ -1,3 +1,7 @@
+#include <iostream>
+#include "../auxfiles/ConsoleColor.h"
+#include "../auxfiles/auxfunc.h"
+
 using namespace std;
 
 void elegirMoneda(int& a, char& c, int d){
